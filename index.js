@@ -5,7 +5,8 @@
  */
 const request = require('request-promise-native'),
       parseString = require('xml2js').parseString,
-      stripNS = require('xml2js').processors.stripPrefix;
+      stripNS = require('xml2js').processors.stripPrefix,
+      methods = require('./NRDPmethods');
 
  /**
   * The main class that will allow access to the RDG Knowledgbase Real Time Incident feeds and return the data in a JSON format
@@ -26,6 +27,7 @@ const request = require('request-promise-native'),
     this.password = password;
     this.authURL = " https://opendata.nationalrail.co.uk/authenticate";
     this.apiURL = " https://opendata.nationalrail.co.uk/api/staticfeeds/4.0";
+    this.methods = methods;
   }
 
   /**

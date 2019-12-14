@@ -1,6 +1,6 @@
 {
   "name": "rdgkb-json",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "JSON Interface for the RDG Knowledgebase APIs. To access the API's you will require a valid username and password.",
   "author": {
     "name": "SpiralArm Consulting ltd & Artonezero ltd",

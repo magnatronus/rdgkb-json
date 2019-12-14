@@ -22,7 +22,6 @@ Then to test just do the following
  * NB: You will need a valid username and password
  */
 const RDGKnowledgebaseAPI = require('./index');
-const NRDPMethod = require('./NRDPMethods');
 const username = "abc@123.a"; // put a valid username here
 const password = "invalidpassword" // put a valid password here
 
@@ -35,7 +34,7 @@ api.logon().then(result => {
   if(!result) {
     console.log(api.error);
   } else {
-    api.callAPI(NRDPMethod.INCIDENTS).then(data => {
+    api.callAPI(api.methods.INCIDENTS).then(data => {
       console.log(data);
     });
   }
